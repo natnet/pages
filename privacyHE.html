@@ -1,98 +1,67 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>מדיניות פרטיות — APP_NAME</title>
-  <style>
-    :root{--bg:#f7f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0f172a}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; background:var(--bg); color:var(--accent); margin:0;padding:32px}
-    .container{max-width:860px;margin:0 auto}
-    header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
-    header h1{font-size:1.25rem;margin:0}
-    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    h2{margin-top:18px;margin-bottom:8px}
-    p{margin:8px 0;color:var(--muted)}
-    ul{margin:8px 0 16px 20px}
-    code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-family:monospace}
-    footer{margin-top:18px;font-size:0.95rem;color:var(--muted)}
-    .badge{font-size:0.8rem;color:#fff;background:#0b84ff;padding:6px 10px;border-radius:999px}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>מדיניות פרטיות — APP_NAME</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#f7f8fb; color:#0f172a; margin:0;padding:32px}
+.container{max-width:860px;margin:0 auto}
+.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+h1,h2{margin-top:18px;margin-bottom:8px}
+p,li{margin:8px 0;color:#374151}
+ul{margin:8px 0 16px 20px}
+footer{margin-top:18px;font-size:0.95rem;color:#6b7280}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="badge">APP_NAME</div>
-      <h1>מדיניות פרטיות</h1>
-    </header>
+<div class="container">
+<main class="card">
+<h1>מדיניות פרטיות</h1>
+<p>תאריך תחילה: <strong>EFFECTIVE_DATE</strong></p>
 
-    <main class="card" role="main">
-      <p>תאריך תחילה: <strong>EFFECTIVE_DATE</strong></p>
 
-      <h2>מבוא</h2>
-      <p>
-        ברוכים הבאים ל־<strong>APP_NAME</strong>. אנו מחויבים להגן על הפרטיות של המשתמשים שלנו. מדיניות פרטיות זו מסבירה אילו מידע אנחנו אוספים, איך אנו משתמשים בו, ובאילו אופנים אתה יכול לשלוט בו.
-      </p>
+<h2>מבוא</h2>
+<p>ברוכים הבאים ל־<strong>APP_NAME</strong>. אנו מחויבים להגן על פרטיות המשתמשים שלנו. מסמך זה מסביר אילו נתונים אנו אוספים, איך אנו משתמשים בהם, ואילו זכויות עומדות לרשותך.</p>
 
-      <h2>בעלים ופרטי יצירת קשר</h2>
-      <p><strong>שם החברה:</strong> COMPANY_NAME</p>
-      <p><strong>אימייל ליצירת קשר:</strong> <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
 
-      <h2>איזה מידע אנו אוספים</h2>
-      <ul>
-        <li><strong>מידע ששם אתה מספק:</strong> כגון שם, אימייל, פרטי פרופיל, תוכן שהועלה וכו׳.</li>
-        <li><strong>מידע טכני ושימוש:</strong> נתוני לוג (IP, סוג דפדפן, מערכת הפעלה), מזהי מכשיר, ושימוש בתוך האפליקציה.</li>
-        <li><strong>קובצי Cookies וטכנולוגיות דומות:</strong> כדי לשפר חוויית משתמש, אבטחה ואנליטיקה.</li>
-      </ul>
+<h2>מידע שנשמר</h2>
+<ul>
+<li>כל המידע שהמשתמש מספק נשמר באפליקציה ובשרת.</li>
+<li>במחיקת משתמש – כל המידע שנשמר נמחק באופן מלא.</li>
+<li>תמונות שמצולמות לצורך הערכת יציבה אינן נשמרות כלל, לא במכשיר ולא בשרת. הן נשלחות ל־OpenAI להערכה בלבד ומיד נמחקות.</li>
+<li>המידע היחיד שנשמר הוא הניתוח המפורט שנוצר מהתמונה (ללא שמירה של התמונה עצמה).</li>
+</ul>
 
-      <h2>למה אנו משתמשים במידע</h2>
-      <ul>
-        <li>להפעלת השירות ומתן הפונקציות שביקשת.</li>
-        <li>לשיפור חויית המשתמש, ניתוח ביצועים ואנליטיקה.</li>
-        <li>לתמיכה טכנית, התראות חשובות ועדכונים.</li>
-        <li>להבטיח אבטחה ולמנוע עבירות ותאונות ביטחון.</li>
-      </ul>
 
-      <h2>שיתוף עם צד שלישי</h2>
-      <p>
-        אנו עשויים לשתף מידע עם ספקי שירות חיצוניים שמספקים עבורנו שירותים כגון אחסון, אנליטיקה, תשלום ותמיכה. רשימת ספקים עיקריים:
-      </p>
-      <ul>
-        <li>THIRD_PARTY_1</li>
-        <li>THIRD_PARTY_2</li>
-        <li>THIRD_PARTY_3</li>
-      </ul>
+<h2>שימוש במידע</h2>
+<ul>
+<li>לספק את הפונקציונליות של האפליקציה.</li>
+<li>לשפר את חווית המשתמש ולהעניק תמיכה טכנית.</li>
+<li>למנוע שימוש לרעה ולאכוף את תנאי השימוש.</li>
+</ul>
 
-      <h2>אנליטיקה ושיווק</h2>
-      <p>אנו עשויים להשתמש בשירותי אנליטיקה כדי להבין איך משתמשים מתקשרים עם המוצר. אם אתה מעוניין, ניתן להשבית חלק מהמעקב דרך הגדרות הפרטיות במכשיר או בדפדפן.</p>
 
-      <h2>Cookies וטכנולוגיות דומות</h2>
-      <p>האתר/האפליקציה משתמשים בעוגיות (cookies) לשם פונקציונליות, אבטחה, וניתוח. ניתן למחוק או לחסום עוגיות דרך הגדרות הדפדפן, אך הדבר עלול להשפיע על חוויית השימוש.</p>
+<h2>שיתוף מידע עם צדדים שלישיים</h2>
+<p>אנו משתפים מידע רק עם שירותים חיוניים (כגון OpenAI לצורך הערכת תמונות). לא מתבצע שימוש במידע למטרות אחרות.</p>
 
-      <h2>שמירת מידע</h2>
-      <p>נשמור את המידע שלך למשך הזמן הנדרש למטרות שהוצגו במדיניות זו, או לפי דרישת החוק. ברירת המחדל לשמירה: <strong>DATA_RETENTION_DAYS</strong> ימים, אלא אם נדרש אחרת.</p>
 
-      <h2>זכויותיך</h2>
-      <p>יש לך זכויות על פי חוקי הפרטיות החלים, כגון בקשה לגישה, תיקון, מחיקה, הגבלת עיבוד ונשיאה של נתונים. לביצוע הזכויות הללו פנה אלינו לכתובת המייל לעיל.</p>
+<h2>שמירת מידע</h2>
+<p>המידע נשמר רק למשך הזמן הנדרש לתפעול האפליקציה. לאחר מחיקת חשבון – כל המידע נמחק.</p>
 
-      <h2>הגנה על ילדים</h2>
-      <p>השירות אינו מיועד לילדים מתחת לגיל 16. אנו לא אוספים במתכוון מידע אישי מילדים מתחת לגיל זה. אם הינך הורה ומאתר מידע כזה, פנה אלינו ונמחקו אותו בהקדם.</p>
 
-      <h2>אבטחה</h2>
-      <p>אנו נוקטים באמצעים טכניים וארגוניים סבירים כדי להגן על מידע אישי. עם זאת, אין פתרון אבטחה שהוא חסין לגמרי — אם אירעה הפרה, נעדכן בהתאם לחוק.</p>
+<h2>זכויות המשתמש</h2>
+<p>יש לך זכות לבקש גישה, תיקון או מחיקה של הנתונים האישיים שלך בכל עת באמצעות <a href="mailto:CONTACT_EMAIL">posepine.ai@gmail.com</a>.</p>
 
-      <h2>שינויים במדיניות</h2>
-      <p>אנחנו עשויים לעדכן מדיניות זו מעת לעת. גרסאות מעודכנות יפורסמו בעמוד זה עם תאריך העדכון. ההודעה על שינויים מהותיים עשויה להישלח בדוא"ל או בהתאם לצורת תקשורת אחרת שבחרת.</p>
 
-      <h2>יצירת קשר</h2>
-      <p>לשאלות או בקשות פרטיות צור קשר בכתובת: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+<h2>יצירת קשר</h2>
+<p>לשאלות נוספות ניתן לפנות ל־<a href="mailto:CONTACT_EMAIL">posepine.ai@gmail.com</a></p>
 
-      <footer>
-        <p>גרסה: 1.0 · תאריך תחילה: <strong>EFFECTIVE_DATE</strong></p>
-      </footer>
-    </main>
 
-    <p style="text-align:center;margin-top:14px;color:var(--muted)">החלף את כל ה־PLACEHOLDERS בערכים הרלוונטיים (APP_NAME, COMPANY_NAME, CONTACT_EMAIL, EFFECTIVE_DATE, DATA_RETENTION_DAYS, THIRD_PARTY_1 וכו').</p>
-  </div>
+<footer>
+<p>גרסה 1.0 · 31.08.2025</p>
+</footer>
+</main>
+</div>
 </body>
 </html>
